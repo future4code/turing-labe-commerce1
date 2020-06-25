@@ -26,11 +26,11 @@ const Botao = styled.button`
 const QuadroProduto = (props) => {
    
     return (
-        <Quadro>
+            <Quadro>
                 <img src={props.fotoProduto} alt=""></img>
                 <ProdutoNome>{props.nomeProduto}</ProdutoNome>
                 <p>{props.precoProduto}</p>
-                <Botao onClick={props.adicionaCarrinho}>Adicionar ao carrinho</Botao>
+                <Botao onClick={props.botaoProduto}>Adicionar ao carrinho</Botao>
             </Quadro> 
     )
 }
