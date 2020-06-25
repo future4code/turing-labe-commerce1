@@ -23,18 +23,16 @@ const Botao = styled.button`
     border: none;
 `
 
-class QuadroProduto extends React.Component {
+const QuadroProduto = (props) => {
    
-
-
-    render() {
-        return <Quadro>
-                    <img src={this.props.fotoProduto}></img>
-                    <ProdutoNome>{this.props.nomeProduto}</ProdutoNome>
-                    <p>{this.props.precoProduto}</p>
-                    <Botao onClick={this.adicionaCarrinho}>Adicionar ao carrinho</Botao>
-                </Quadro>
-        }
+    return (
+        <Quadro>
+                <img src={props.fotoProduto} alt=""></img>
+                <ProdutoNome>{props.nomeProduto}</ProdutoNome>
+                <p>{props.precoProduto}</p>
+                <Botao onClick={props.adicionaCarrinho}>Adicionar ao carrinho</Botao>
+            </Quadro> 
+    )
 }
 
 export default QuadroProduto
