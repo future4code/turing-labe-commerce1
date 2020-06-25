@@ -17,21 +17,19 @@ const Teste = styled.p`
     margin-top: 0px;
 `
 
-class Carrinho extends React.Component {
-    render () {
+const Carrinho = (props) => {
+    
         return (
             <JanelaCarrinho>
                 <h1>Carrinho</h1>
                     <div>
                         <ul>
-                            <LinhaProduto>4x Item C</LinhaProduto>
-                            <LinhaProduto>2x Item A</LinhaProduto>
+                            <LinhaProduto>{props.teste}</LinhaProduto>
                         </ul>
                     </div>
                 <Teste>Total: R$</Teste>
             </JanelaCarrinho>
         )
     }
-}
 
 export default Carrinho
