@@ -24,7 +24,7 @@ const Carrinho = (props) => {
                 <h1>Carrinho</h1>
                     <div>
                         <ul>
-                            <LinhaProduto>{props.teste}</LinhaProduto>
+                            <LinhaProduto>{props.exibirCarrinho}</LinhaProduto>
                         </ul>
                     </div>
                 <Teste>Total: R$</Teste>
